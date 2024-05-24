@@ -24,8 +24,7 @@
 }
 
 .fighter{
-    padding-left: 20%; 
-    padding-right: 20%;
+    margin: 0 auto;
 
 }
 
@@ -64,4 +63,24 @@ p{
 
 ul{
     color: var(--secondary-color);
+}
+
+
+/* Styles for desktop screens (min-width 992px) */ @media only screen and (min-width: 992px{
+    .fighter {
+         width: 60%; /* Set width for desktops */ 
+    }
+} 
+
+/* Styles for tablet screens (width between 768px and 992px) */ 
+@media only screen and (min-width: 768px) and (max-width: 992px) { 
+    .fighter { 
+        width: 80%; /* Adjust width for tablets */ 
+    } 
+} 
+
+/* Styles for phone screens (max-width 768px) */ @media only screen and (max-width: 768px) { 
+    .fighter { 
+        width: 100%; /* Set full width for phones */  
+    }
 }
