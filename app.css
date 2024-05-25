@@ -76,6 +76,13 @@ ul{
     border-bottom: 2px solid;
     border-image-source: linear-gradient(to right, var(--border-color1), var(--border-color2));
     border-image-slice: 1;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.info{
+    margin: auto 0;
 }
 
 /* Styles for desktop screens (min-width 992px) */ @media only screen and (min-width: 992px{
@@ -91,7 +98,8 @@ ul{
     } 
 } 
 
-/* Styles for phone screens (max-width 768px) */ @media only screen and (max-width: 768px) { 
+/* Styles for phone screens (max-width 768px) */ 
+@media only screen and (max-width: 768px) { 
     .fighter { 
         width: 100%; /* Set full width for phones */  
     }
