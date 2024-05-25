@@ -81,9 +81,11 @@ ul{
     justify-content: space-between;
 }
 
-.info{
+.info, .page_title, .navigation{
     margin: auto 0;
 }
+
+
 
 /* Styles for desktop screens (min-width 992px) */ @media only screen and (min-width: 992px{
     .fighter {
