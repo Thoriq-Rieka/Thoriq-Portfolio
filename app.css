@@ -106,8 +106,11 @@ img{
 }
 
 .AboutMe{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     height: 400px;
     width: 100%;
@@ -223,9 +226,6 @@ ul{
         width: 90%;
         height: 45%;
     }
-    .part div{
-        height: auto;
-    }
     .part img{
         height: 350px;
     }
@@ -241,14 +241,24 @@ ul{
     }
     .AboutMe{
         flex-direction: column;
-        height: 800px;
+        height: auto;
+
+        margin-top: 0px;
+        /*
+        */
+        margin-bottom: 0px;
+
+        padding-top: 0px;
+        /*
+        */
+        padding-bottom: 0px;
     }
     .part{
         width: 90%;
         height: 350px;
-    }
-    .part div{
-        height: auto;
+
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     .header{
         flex-direction: column;
