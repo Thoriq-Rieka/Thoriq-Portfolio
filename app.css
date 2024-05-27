@@ -1,16 +1,14 @@
 :root {
-    --primary-color: rgb(188, 222, 255);  /* Base color for borders, headings */
-    --secondary-color: rgb(255, 255, 255);  /* Color for text elements */
-    --background-color1: rgb(7, 23, 39); /* First background gradient color */
-    --background-color2: rgb(10, 10, 20);  /* Second background gradient color */
-    --background-color3: rgb(39, 6, 18);
-    --background-inside-border-color: rgb(35, 37, 50);      /* Border gradient color 1 */
-    --background-inside-border-color2: rgb(35, 37, 50);     /* Border gradient color 2 */
-    --border-color1: rgb(174, 236, 255);
-    --border-color2: rgb(246, 219, 255);
-    --special-color: rgb(106, 255,255);
-    --part-background-color1: rgb(66, 84, 134);
-    --part-background-color2: rgb(78, 82, 111);
+    --primary-color: rgb(130, 185, 255); /* Softer base color for headings */
+    --secondary-color: rgb(255, 255, 255); /* Slightly lighter color for paragraph text elements */
+    --background-color: rgb(30, 30, 45); /* Second background gradient color for better contrast */
+    --border-color1: rgb(146, 219, 255); /* Keeping this color as it works well */
+    --border-color2: rgb(90, 95, 130); /* Slightly lighter for better contrast */
+    --special-color: rgb(90, 255, 255); /* Tweaked for a balanced look */
+    --background-inside-border-color: rgb(44, 47, 61); /* Match secondary color for consistency */
+    --part-background-color1: rgb(80, 100, 160); /* A touch more vibrant for inside divs */
+    --part-background-color2: rgb(44, 47, 61); /* Match secondary color for consistency */
+
     --special-height: 2px;
     --navbar-height: calc(10px + 2em);
 }
@@ -18,14 +16,52 @@
 *{
     font-family: Karla, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     scrollbar-width:thin;
-    scrollbar-color: var(--special-color) rgb(18, 17, 13);
+    scrollbar-color: var(--special-color) transparent;
 }
 
 .body{
 
     padding-top: var(--navbar-height);
 
-    background-image: linear-gradient(var(--background-color1), var(--background-color2), var(--background-color3));
+    background-color: var(--background-color);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--background-inside-border-color);
+    width: 100%;
+    
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0px;
+
+    margin-right: 0px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+    border-bottom: var(--special-height) solid;
+    border-color: var(--special-color);
+}
+
+.navlist{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: x-large;
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 .introduction{
@@ -46,6 +82,21 @@
     margin-bottom: 10px;
 }
 
+.anchor{
+    margin-left: 5px;
+    background: linear-gradient(90deg, rgba(42,33,80,1) 0%, rgba(255,255,255,0) 20%, rgba(255,255,255,0) 100%);
+    border-radius: 4px;
+    
+    padding-left: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.anchor h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 img{
     height: 100%;
     width: auto;
@@ -62,9 +113,13 @@ img{
     align-items: center;
 }
 
+.part img{
+    height: 400px;
+}
+
 .part{
-    height: 200px;
-    width: 600px;
+    height: auto;
+    width: 800px;
 
     padding-left: 10px;
     padding-top: 10px;
@@ -79,7 +134,7 @@ img{
     display: flex;
     justify-content: space-around;
 
-    background-image: linear-gradient(var(--part-background-color1), var(--part-background-color2));
+    background-color: var(--background-inside-border-color);
 }
 
 .part h1{
@@ -90,7 +145,7 @@ img{
 .project{
     width: 60%;
     margin: 0 auto;
-    background-image: linear-gradient(var(--background-inside-border-color), var(--background-inside-border-color2));
+    background-color: var(--background-inside-border-color);
 
     margin-top: 10px;
     margin-bottom: 10px;
@@ -126,46 +181,9 @@ ul{
     color: var(--secondary-color);
 }
 
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: var(--background-inside-border-color);
-    width: 100%;
-    
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 0px;
-
-    margin-right: 0px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-
-    border-bottom: var(--special-height) solid;
-    border-color: var(--special-color);
-}
-
-.navbar{
-    width: 15%;
-    margin-left: 20px;
-    margin-right: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.logo{
-    font-weight: bold;
-    font-size: x-large;
-    text-decoration: none;
-    color: var(--primary-color);
-}
-
 .unit{
+    margin-left: 10px;
+    margin-right: 10px;
     text-decoration: none;
     color: var(--primary-color);
 }
