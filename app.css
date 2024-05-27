@@ -9,10 +9,10 @@
     --border-color1: rgb(174, 236, 255);
     --border-color2: rgb(246, 219, 255);
     --special-color: rgb(106, 255,255);
-    --special-height: 2px;
-    --navbar-height: calc(25px + 2em);
     --part-background-color1: rgb(66, 84, 134);
     --part-background-color2: rgb(78, 82, 111);
+    --special-height: 2px;
+    --navbar-height: calc(10px + 2em);
 }
 
 *{
@@ -25,7 +25,7 @@
 
     padding-top: var(--navbar-height);
 
-    background-image: linear-gradient(var(--background-color1), var(--background-color2));
+    background-image: linear-gradient(var(--background-color1), var(--background-color2), var(--background-color3));
 }
 
 .introduction{
@@ -97,8 +97,8 @@ img{
     
     padding-top: 2px;
     padding-bottom: 5px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
     
     border-left: 5px solid;
     border-right: 5px solid;
