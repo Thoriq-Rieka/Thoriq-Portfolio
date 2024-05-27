@@ -3,16 +3,20 @@
     --secondary-color: rgb(255, 255, 255);  /* Color for text elements */
     --background-color1: rgb(7, 23, 39); /* First background gradient color */
     --background-color2: rgb(10, 10, 20);  /* Second background gradient color */
-    --backroudnd-color3: rgb(39, 6, 18);
+    --background-color3: rgb(39, 6, 18);
     --background-inside-border-color: rgb(35, 37, 50);      /* Border gradient color 1 */
     --background-inside-border-color2: rgb(35, 37, 50);     /* Border gradient color 2 */
     --border-color1: rgb(174, 236, 255);
     --border-color2: rgb(246, 219, 255);
+    --navbar-height: calc(25px + 2em);
+}
+
+*{
+    font-family: Karla, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .body{
     background-image: linear-gradient(var(--background-color1), var(--background-color2));
-    font-family: Karla, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .introduction{
@@ -24,8 +28,7 @@
 }
 
 .fighter{
-    padding-left: 20%; 
-    padding-right: 20%;
+    margin: 0 auto;
 
 }
 
@@ -64,4 +67,47 @@ p{
 
 ul{
     color: var(--secondary-color);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--background-color3);
+    width: 100%;
+    padding: 10px 50px;
+    display: flex;
+}
+
+.break{
+    height: var(--navbar-height);
+}
+
+.navbar a, .header a{
+    text-decoration: none;
+    color: var(--primary-color)
+}
+
+/* Styles for desktop screens (min-width 992px) */ @media only screen and (min-width: 992px{
+    .fighter {
+         width: 60%; /* Set width for desktops */ 
+    }
+    
+    .desktop{
+        width: 20%
+    }
+} 
+
+/* Styles for tablet screens (width between 768px and 992px) */ 
+@media only screen and (min-width: 768px) and (max-width: 992px) { 
+    .fighter { 
+        width: 80%; /* Adjust width for tablets */ 
+    } 
+} 
+
+/* Styles for phone screens (max-width 768px) */ 
+@media only screen and (max-width: 768px) { 
+    .fighter { 
+        width: 100%; /* Set full width for phones */  
+    }
 }
