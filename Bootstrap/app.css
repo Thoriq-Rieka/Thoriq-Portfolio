@@ -51,8 +51,12 @@ body{
     background-color: var(--background-inside-border-color);
 }
 
-.luxion-bg-gradient{
+.luxion-bg-gradient-left{
     background: linear-gradient(to right, rgba(42,33,80,0.8) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+}
+
+.luxion-bg-gradient-center{
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(42,33,80,0.8) 50%, rgba(255,255,255,0) 100%);
 }
 
 .luxion-text-bold{
@@ -70,4 +74,21 @@ body{
 .luxion-margin-top-bottom{
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.luxion-padding-top-bottom{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.luxion-border-line-right{
+    border-right: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(var(--border-color1), var(--border-color2));
+}
+
+.luxion-border-line-left{
+    border-left: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(var(--border-color1), var(--border-color2));
 }
