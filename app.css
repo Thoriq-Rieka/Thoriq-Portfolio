@@ -6,12 +6,28 @@
     --navbar-color: rgb(44, 47, 61);
     --special-color: rgb(90, 255, 255);
     --background-inside-border-color: rgb(44, 47, 61);
+
+    scrollbar-width: thin;
+    scrollbar-color: var(--special-color) rgba(0, 0, 0, 0);
 }
 
 *{
     font-family: Karla, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 0px;
     color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-link:hover, .navbar-brand:hover{
+    color: var(--special-color);
 }
 
 .navbar{
