@@ -1,0 +1,28 @@
+:root{
+}
+
+html{
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #F0FFF0 #FFD700;
+}
+
+.luxion-primary-color{
+    background-color: #2E8B57;
+}
+
+.luxion-secondary-color{
+    background-color: #20B2AA;
+}
+
+.luxion-accent-color{
+    color: #FFD700;
+}
+
+.luxion-bg-color{
+    background-color: #F0FFF0;
+}
+
+.luxion-text-color{
+    color: #2F4F4F;
+}
